@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spyder GYM</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* CSS reset */
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: url(img/5.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+    .left {
+      display: inline-block;
+      color: red;
+      /* border: 2px solid blue; */
+      position: absolute;
+      left: 34px;
+      top: 12px;
+    }
+    .left img {
+      width: 100px;
+      filter: invert(100%);
+    }
+    .left div {
+      color: rgb(252, 250, 248);
+      text-align: center;
+      font-family: "Bacasime Antique", serif;
+      font-weight: 600;
+    }
+    .mid {
+      display: block;
+      width: 40%;
+      margin: 12px auto;
+      color: blueviolet;
+      /* border: 2px solid blue; */
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: rgb(227, 221, 216);
+      text-decoration: none;
+      padding: 4px 4px;
+      border: 2px solid rgb(7, 6, 6);
+      border-radius: 30px;
+      /* background-color: rgb(15, 13, 10); */
+      font-family: "Bacasime Antique", serif;
+      font-weight: 800;
+    }
+    .navbar li a:hover,
+    .navbar li a:active {
+      color: rgb(8, 6, 6);
+      text-decoration: underline;
+      border-color: rgb(17, 15, 15);
+      background-color: whitesmoke;
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 15px;
+      display: inline-block;
+      color: brown;
+      /* border: 2px solid blue; */
+    }
+    .search {
+      border: 2px solid black;
+      display: inline block;
+      padding: 4px 4px;
+      font-size: 20px;
+      border-radius: 30px;
+      text-align: center;
+      font-family: "Bacasime Antique", serif;
+      background-color: rgb(252, 252, 252);
+    }
+    .btn {
+      color: rgb(230, 226, 222);
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      padding: 4px 4px;
+      border: 2px solid rgb(7, 6, 6);
+      border-radius: 30px;
+      font-size: 20px;
+      font-family: "Bacasime Antique", serif;
+      background-color: rgb(36, 32, 25);
+      font-weight: 400;
+    }
+    .btn:hover {
+      color: rgb(8, 6, 6);
+      border-color: rgb(17, 15, 15);
+      background-color: whitesmoke;
+      text-decoration: none;
+    }
+    .containor {
+      border: 2px solid rgb(39, 37, 37);
+      margin: 99px 155px;
+      padding: 1px;
+      border-radius: 24px;
+      width: 29%;
+    }
+    .group input {
+      border: 2px solid black;
+      display: block;
+      width: 63%;
+      margin: 6px auto;
+      padding: 6px;
+      font-size: 24px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .containor h1 {
+      text-align: center;
+      color: rgb(154, 184, 184);
+    }
+    .containor button {
+      border: 2px solid black;
+      display: block;
+      width: 64%;
+      margin: 8px auto;
+      padding: 3px;
+      font-size: 29px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="left">
+        <img src="img/2.jpg" alt="logo" />
+        <div>SPYDER GYM</div>
+      </div>
+      <!-- Navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FITNES CENTER</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <!-- buttons -->
+      <div class="right">
+          <input type="text" class="search" placeholder="Search here" />
+          <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="containor">
+      <h1>Join the best gym in India now</h1>
+      <form action="noaction.php">
+        <div class="group">
+          <input type="text" name="" placeholder="Enter Your Name" />
+        </div>
+        <div class="group">
+          <input type="text" name="" placeholder="Enter Your Age" />
+        </div>
+        <div class="group">
+          <input type="text" name="" placeholder="Enter Your Gender" />
+        </div>
+        <div class="group">
+          <input type="text" name="" placeholder="Enter Your Locality" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+    <!-- <div class="call"></div> -->
+  </body>
+</html>
